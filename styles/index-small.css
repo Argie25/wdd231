@@ -1,0 +1,79 @@
+@media only screen and (max-width: 480px) {
+    /* Hamburger button styles */
+    #menu {
+        font-size: 2rem;
+        border: none;
+        background: none;
+        color: #000;
+        position: fixed;
+        top: 15px;
+        right: 15px;
+        z-index: 101;
+        cursor: pointer;
+    }
+
+    /* Hamburger button icons */
+    #menu::before {
+        content: "☰"; /* Menu icon */
+    }
+
+    #menu.open::before {
+        content: "❎"; /* Close icon */
+    }
+
+    /* Navigation menu styles */
+    .navigation {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 70%;
+        height: 100%;
+        background-color: var(--secondary-color);
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 60px; /* Space for the hamburger button */
+        z-index: 100;
+    }
+
+    /* Show navigation when the 'open' class is added */
+    .navigation.open {
+        display: flex;
+    }
+
+    /* Navigation links styling */
+    .navigation a {
+        font-size: 1.5rem;
+        margin: 20px 0;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .navigation a:hover {
+        color: var(--primary-color);
+    }
+
+
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* Make each section take full width */
+    .course,
+    .location,
+    .certificate {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    /* Adjust image size for small screens */
+    .location img {
+        height: auto;
+        width: 100%;
+        max-width: 200px;
+    }
+}

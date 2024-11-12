@@ -4,8 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/index-small.css">
+    <script src="scripts/index.js" defer></script>
+    <meta name="description" content="My course home page">
+    <meta name="author" content="Argie Dela Cruz">
 </head>
 <body>
-    <p>Hello World</p>
+    <header>
+        <img src="images/profile.png" alt="profile picture">
+        <h1>Argie Dela Cruz</h1>
+    </header>
+
+    <button id="menu"></button>
+    <nav class= "navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Github Profile</a></li>
+            <li><a href="https://www.linkedin.com/in/argie888/">LinkedIn</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <div class= "main">
+            <section class = "course">
+                <h2>Course Work</h2>
+                <ul>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                </ul>
+            </section>
+    
+            <section class = "location">
+                <h2>Zambales, Phillipines</h2>
+                <figure>
+                    
+                    <img src="images/placeholder.gif" alt="Description of the image">
+                    <figcaption>Title or caption for the image</figcaption>
+                </figure>
+            </section>
+    
+            <section class = "certificate">
+                <h2>Web and Computer Programming Certificate</h2>
+                <div id = "course">
+                    <button>ALL</button>
+                    <button>CSE</button>
+                    <button>WDD</button>
+                </div>
+                
+                <div id = "topic">
+                <button>CSE 110</button>
+                    <button>WDD 130</button>
+                    <button>CSE 111</button>
+                    <button>CSE 210</button>
+                    <button>WDD 131</button>
+                    <button>WDD 231</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>©<span id="currentyear"></span> Argie Dela Cruz Zambales, Phillipines</p>
+        <p id="lastModified">Last updated: </p>
+    </footer>
 </body>
 </html>
