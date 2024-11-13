@@ -26,7 +26,8 @@
     /* Navigation menu styles */
     .navigation {
         display: flex;
-        
+        flex-direction: row; /* Stack links vertically */
+        text-align: center;
         position: fixed;
         top: 0;
         right: 0;
@@ -44,14 +45,15 @@
         transform: translateX(0);
     }
 
-    /* Navigation links styling */
+
     .navigation a {
-        font-size: 1.5rem;
-        margin: 20px 0;
-        color: #fff;
-        text-decoration: none;
-        transition: color 0.2s ease;
-    }
+    font-size: 1.5rem;
+    margin: 20px 0; /* Space between each link */
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    display: block; /* Ensures each link takes full width */
+}
 
     .navigation a:hover {
         color: var(--primary-color);
